@@ -81,20 +81,20 @@ export default {
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1>A Propos</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">A Propos</h1>
         <div class="grid grid-cols-2">
-          <div>
+          <div class="pt-5">
           <img src="/public/images/Test.jpg" alt="">
         </div>
         <div class="grid grid-rows-2">
-        <p>Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
-      <button>CV</button>  
+        <p class="md:text-3xl text-center pt-64 text-6xl text-[#252C35]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+      <button class=" w-20 h-20 mb-20 rounded-2xl bg-blue-600 py-2 px-5  text-white">CV</button>  
     </div>
       </div>
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1>Projets</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">Projets</h1>
         
       </section>
       </div>

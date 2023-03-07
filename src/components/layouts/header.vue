@@ -1,5 +1,5 @@
 <template>
-    <header class=" bg-white sticky top-0 drop-shadow-lg z-10 ">
+    <header class=" bg-transparent sticky top-0 drop-shadow-lg z-10 ">
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-black"> Passez au contenu </a>
         <nav class=" lg:flex lg:justify-between items-center">
           <div class="flex justify-between items-center">

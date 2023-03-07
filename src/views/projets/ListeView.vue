@@ -1,6 +1,8 @@
 <template>
+        <Header />
+
   <div class="mt-12 px-5 flex flex-col gap-20 relative">
-    <Header />
+    
     <h1 class="font-smythe text-2xl">Projet</h1>
 
 

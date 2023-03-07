@@ -27,7 +27,7 @@
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm font-museomoderno text-black  " to="/">Accueil</RouterLink>
             </li>
             <li class="my-5">
-              <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/jeux">Projets</RouterLink>
+              <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/projets">Projets</RouterLink>
             </li>
             <li class="my-5">
               <RouterLink v-if="isLoggedIn" class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/createProjet">Ajout</RouterLink>
@@ -45,7 +45,7 @@
               <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-museomoderno text-black" to="/">Accueil</RouterLink>
             </li>
             <li class="my-5">
-              <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-algerian text-black " to="/jeux">Projets</RouterLink>
+              <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-algerian text-black " to="/projets">Projets</RouterLink>
             </li>
             <li class="my-5">
               <RouterLink v-if="isLoggedIn" class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/createProjet">Ajout</RouterLink>

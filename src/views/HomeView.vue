@@ -83,9 +83,14 @@ export default {
       <section class="md:h-screen h-fit">
         <h1>A Propos</h1>
         <div class="grid grid-cols-2">
+          <div>
           <img src="/public/images/Test.jpg" alt="">
-        <p>Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
         </div>
+        <div class="grid grid-rows-2">
+        <p>Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+      <button>CV</button>  
+    </div>
+      </div>
       </section>
       </div>
       </div>

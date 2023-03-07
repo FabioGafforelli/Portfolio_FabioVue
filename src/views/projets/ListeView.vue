@@ -24,8 +24,8 @@ import card from "../../components/icones/card.vue"
 import Rechercher from "../../components/icones/Rechercher.vue"
 import Modification from "../../components/icones/Modification.vue"
 import Supprimer from "../../components/icones/Supprimer.vue"
-import Header1 from '../../components/Header.vue';
-import Footer1 from '../../components/Footer.vue';
+import Header1 from '../../components/layouts/header.vue';
+import Footer1 from '../../components/layouts/footer.vue';
 import BoutonImage from '../../components/icones/modifierListe/BoutonImage.vue';
 import Creation from "../../components/icones/modifierListe/creation.vue";
 // Bibliothèque Firestore : import des fonctions

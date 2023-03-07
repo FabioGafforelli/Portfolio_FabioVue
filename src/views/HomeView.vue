@@ -1,4 +1,5 @@
 <script>
+import Dropdown from '../components/icones/Dropdown.vue';
 import Header from '../components/layouts/header.vue';
 export default {
   data: () => {
@@ -8,7 +9,7 @@ export default {
       typeArray: ['Neon', 'Chamber', 'Bronze', 'KJ Lineup'],
       typingSpeed: 200,
       erasingSpeed: 100,
-      newTextDelay: 2000,
+      newTextDelay: 1500,
       typeArrayIndex: 0,
       charIndex: 0
     }
@@ -52,7 +53,7 @@ export default {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
     name:"App",
-    components: { Header },
+    components: { Header, Dropdown },
 }
 
 </script>
@@ -69,6 +70,9 @@ export default {
           <div class="col-span-2 md:text-9xl text-center text-2xl text-green-600 ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>
+<div class="flex flex-col justify-center items-center relative mb-20 lg:mb-36 xl:mb-44 motion-safe:animate-bounce">
+            <Dropdown />
+          </div>
           </div>
           
 

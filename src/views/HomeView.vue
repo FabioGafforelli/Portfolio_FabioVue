@@ -92,6 +92,11 @@ export default {
     </div>
       </div>
       </section>
+
+      <section class="md:h-screen h-fit">
+        <h1>Projets</h1>
+        
+      </section>
       </div>
       </div>
 </template>

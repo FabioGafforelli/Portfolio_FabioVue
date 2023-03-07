@@ -1,8 +1,8 @@
 <template>
   <div ref="container">
-<div class="bg-red-800 text-white rounded-xl px-4 pt-3 shadow-card">
-    <div class="flex">
-        <img class="rounded-xl w-1/3" :src="photo" alt="Image de l'artiste">
+<div class="text-white rounded-xl px-4 pt-3 shadow-card">
+    <div class="flex rounded-xl px-4 pt-3 shadow-card">
+        <img class="w-60" :src="photo" alt="Image de l'artiste">
     </div>
     <div class="flex justify-center gap-10 mt-1">
         <RouterLink v-if="isAdmin" :to="{ name:'UpdateProjets', params:{ id}}">

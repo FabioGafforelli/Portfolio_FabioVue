@@ -1,5 +1,5 @@
 <template>
-  <h1 class="font-lato mb-20 border-b-2 text-center text-2xl">Modifier le Projet</h1>
+  <h1 class="font-lato mb-20 border-b-2 text-center text-2xl">Consulter le Projet</h1>
 
   <div class="relative mt-12 mb-20 flex flex-col gap-20 px-5">
     <form @submit.prevent="UpdateProjet">

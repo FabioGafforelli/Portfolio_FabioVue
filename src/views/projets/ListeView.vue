@@ -1,5 +1,6 @@
 <template>
   <div class="mt-12 px-5 flex flex-col gap-20 relative">
+    <Header />
     <h1 class="font-smythe text-2xl">Projet</h1>
 
 
@@ -23,7 +24,7 @@ import card from "../../components/icones/card.vue"
 import Rechercher from "../../components/icones/Rechercher.vue"
 import Modification from "../../components/icones/Modification.vue"
 import Supprimer from "../../components/icones/Supprimer.vue"
-import Header1 from '../../components/layouts/header.vue';
+import Header from '../../components/layouts/header.vue';
 import BoutonImage from '../../components/icones/modifierListe/BoutonImage.vue';
 import Creation from "../../components/icones/modifierListe/creation.vue";
 // Bibliothèque Firestore : import des fonctions
@@ -143,6 +144,6 @@ async createProjet(){
         },
 },
   name: "App",
-  components: { card, Rechercher, Modification, Supprimer, Header1, BoutonImage, Creation, RouterLink },
+  components: { card, Rechercher, Modification, Supprimer, Header, BoutonImage, Creation, RouterLink },
 };
 </script>

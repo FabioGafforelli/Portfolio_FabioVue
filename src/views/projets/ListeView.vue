@@ -16,7 +16,6 @@
     </div>
     
   </div>
-  <Footer1 />
 </template>
 
 <script>
@@ -25,7 +24,6 @@ import Rechercher from "../../components/icones/Rechercher.vue"
 import Modification from "../../components/icones/Modification.vue"
 import Supprimer from "../../components/icones/Supprimer.vue"
 import Header1 from '../../components/layouts/header.vue';
-import Footer1 from '../../components/layouts/footer.vue';
 import BoutonImage from '../../components/icones/modifierListe/BoutonImage.vue';
 import Creation from "../../components/icones/modifierListe/creation.vue";
 // Bibliothèque Firestore : import des fonctions
@@ -145,6 +143,6 @@ async createProjet(){
         },
 },
   name: "App",
-  components: { card, Rechercher, Modification, Supprimer, Header1, Footer1, BoutonImage, Creation, RouterLink },
+  components: { card, Rechercher, Modification, Supprimer, Header1, BoutonImage, Creation, RouterLink },
 };
 </script>

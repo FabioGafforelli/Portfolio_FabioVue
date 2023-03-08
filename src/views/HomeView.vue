@@ -95,13 +95,238 @@ export default {
 
       <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">Projets</h1>
-        
+        <input type="checkbox" id="moreInfo">
+
+<div class="mi-outer">
+  <div class="mi">
+    <div class="mi-flap2"></div>
+    <label for="moreInfo" class="mi-flap1"></label>
+    <div class="mi-flap5">
+      <div class="mi-info"></div>
+    </div>
+    <div class="mi-flap4">
+      <div class="mi-info">
+        <label for="moreInfo" class="mi-close">X</label>
+      </div>
+    </div>
+    <div class="mi-flap3">
+      <div class="mi-info"></div>
+    </div>
+  </div>
+</div>
       </section>
       </div>
       </div>
 </template>
 
 <style scoped>
+#moreInfo {
+  appearance: none;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+}
+.mi {
+  --openText: "Cours";
+  --altText: "Cours";
+  --img: url('/public/images/Tp_Vue_Chaussure.png');
+  --fullText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum porro delectus magni mollitia aut eligendi. Perferendis tenetur asperiores blanditiis nobis sint aliquam rem, facere dolores. Ipsa eveniet libero enim quisquam.";
+  position: relative;
+  width: 12em;
+  height: 4em;
+  background-image: var(--img);
+  background-position: right;
+  background-size: 300% 300%;
+  transition: transform 0.5s 0s;
+  transform-style: preserve-3d;
+  perspective: 40em;
+}
+.mi-outer {
+  filter: drop-shadow(0.4em 0.2em 1em #0004);
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.mi > * {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.mi > *::before, .mi > *::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.mi-flap1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  transition: transform 0.5s 1.5s;
+}
+.mi-flap1::before {
+  content: var(--openText);
+  background-color: #eee;
+  border: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.mi-flap1::after {
+  background-image: var(--img);
+  background-position: top right;
+  background-size: 300% 300%;
+  transform: rotateX(180deg);
+}
+.mi-flap1:hover::before {
+  border-color: #585;
+}
+.mi-flap2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom right;
+  transition: transform 0.5s 1s;
+}
+.mi-flap2::before {
+  content: var(--altText);
+  background-color: #eee;
+  border: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mi-flap2::after {
+  background-image: var(--img);
+  background-position: bottom right;
+  background-size: 300% 300%;
+  transform: rotateX(180deg);
+}
+.mi-flap3 {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  transform-origin: right;
+  visibility: hidden;
+  transition: visibility 0s 1s, transform 0.5s 0.5s;
+}
+.mi-flap3::before {
+  background-image: var(--img);
+  background-position: right;
+  background-size: 300% 100%;
+}
+.mi-flap3 .mi-info {
+  background-position: right;
+}
+.mi-flap3 .mi-info::after {
+  left: -200%;
+}
+.mi-flap4 {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  transform-origin: left;
+  visibility: hidden;
+  transition: visibility 0s 1s, transform 0.5s 0s;
+}
+.mi-flap4::before {
+  background-image: var(--img);
+  background-position: left;
+  background-size: 300% 100%;
+}
+.mi-flap4::after {
+  content: unset;
+}
+.mi-flap4 .mi-info {
+  background-position: left;
+}
+.mi-flap4 .mi-info::after {
+  left: 0%;
+}
+.mi-flap5 {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  visibility: hidden;
+  transform: rotateY(180deg);
+  transition: visibility 0s 0.5s;
+}
+.mi-flap5 .mi-info {
+  background-position: center;
+}
+.mi-flap5 .mi-info::after {
+  left: -100%;
+}
+.mi .mi-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: var(--img);
+  background-size: 300% 100%;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+.mi .mi-info::after {
+  padding: 4em 2em 2em;
+  content: var(--fullText);
+  border: 2px solid #555;
+  position: absolute;
+  top: 0%;
+  width: 300%;
+  height: 100%;
+  background-color: #fffa;
+}
+.mi .mi-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  z-index: 2;
+  cursor: pointer;
+  transition: color 0.25s;
+  transform-style: preserve-3d;
+}
+.mi .mi-close:hover {
+  color: #585;
+}
+#moreInfo:checked ~ .mi-outer > .mi > .mi-flap1 {
+  pointer-events: none;
+  transform: rotateX(180deg);
+  transition: transform 0.5s 0s;
+}
+#moreInfo:checked ~ .mi-outer > .mi > .mi-flap2 {
+  transform: rotateX(-180deg);
+  transition: transform 0.5s 0.5s;
+}
+#moreInfo:checked ~ .mi-outer > .mi > .mi-flap3 {
+  transform: rotateY(180deg);
+  visibility: visible;
+  transition: visibility 0s 1s, transform 0.5s 1s;
+}
+#moreInfo:checked ~ .mi-outer > .mi > .mi-flap4 {
+  transform: rotateY(-180deg);
+  visibility: visible;
+  transition: visibility 0s 1s, transform 0.5s 1.5s;
+}
+#moreInfo:checked ~ .mi-outer > .mi > .mi-flap5 {
+  visibility: visible;
+  transition: visibility 0s 1s;
+}
+
   span.typed-text {
     color: #D2B94B;
   }

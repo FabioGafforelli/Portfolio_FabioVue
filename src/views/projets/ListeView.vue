@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import card from "../../components/icones/card.vue"
+import card from "../../components/icones/cardCobbleBros.vue"
 import Rechercher from "../../components/icones/Rechercher.vue"
 import Modification from "../../components/icones/Modification.vue"
 import Supprimer from "../../components/icones/Supprimer.vue"

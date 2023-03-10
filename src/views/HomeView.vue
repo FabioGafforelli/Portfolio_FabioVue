@@ -1,5 +1,6 @@
 <script>
-import Card from '../components/icones/card.vue';
+import cardConfigurateur from '../components/icones/cardConfigurateur.vue';
+import cardCobbleBros from '../components/icones/cardCobbleBros.vue';
 import Dropdown from '../components/icones/Dropdown.vue';
 import Header from '../components/layouts/header.vue';
 export default {
@@ -54,7 +55,7 @@ export default {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
     name:"App",
-    components: { Header, Dropdown, Card },
+    components: { Header, Dropdown, cardConfigurateur, cardCobbleBros },
 }
 
 </script>
@@ -95,9 +96,13 @@ export default {
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">Projets</h1>
-        <input type="checkbox" id="moreInfo">
+        <h1 class="md:text-8xl text-left text-6xl text-[#252C35] pb-10">Projets</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<cardConfigurateur />
+<cardCobbleBros />
 <Card />
+<Card />
+</div>
 <div class="mi-outer">
   <div class="mi">
     <div class="mi-flap2"></div>

@@ -5,25 +5,34 @@
     <a href="#!">
       <img
         class="rounded-t-lg"
-        src="/public/images/Test.jpg"
+        src="/public/images/Tp_Vue_Chaussure.png"
         alt="" />
     </a>
     <div class="p-6">
       <h5
         class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-        Card title
+        TP Configurateur Vue.JS
       </h5>
       <p class="mb-4 text-base text-neutral-600 ">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
+        Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js
       </p>
+      <div class="grid grid-cols-2">
       <button
         type="button"
         class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black "
         data-te-ripple-init
         data-te-ripple-color="light">
-        Button
+        <a href="/public/teaching/TP Configurateur_Basket_v2.pdf">
+        Voir le cours
+        </a>
       </button>
+      <p
+        class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black "
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Teaching
+    </p>
+      </div>
     </div>
   </div>
 </div>

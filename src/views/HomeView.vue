@@ -1,4 +1,5 @@
 <script>
+import Card from '../components/icones/card.vue';
 import Dropdown from '../components/icones/Dropdown.vue';
 import Header from '../components/layouts/header.vue';
 export default {
@@ -53,7 +54,7 @@ export default {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
     name:"App",
-    components: { Header, Dropdown },
+    components: { Header, Dropdown, Card },
 }
 
 </script>
@@ -96,7 +97,7 @@ export default {
       <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">Projets</h1>
         <input type="checkbox" id="moreInfo">
-
+<Card />
 <div class="mi-outer">
   <div class="mi">
     <div class="mi-flap2"></div>
@@ -130,7 +131,7 @@ export default {
   --openText: "Cours";
   --altText: "Cours";
   --img: url('/public/images/Tp_Vue_Chaussure.png');
-  --fullText: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum porro delectus magni mollitia aut eligendi. Perferendis tenetur asperiores blanditiis nobis sint aliquam rem, facere dolores. Ipsa eveniet libero enim quisquam.";
+  --fullText: "Réalisation d'un pdf expliquant le cours de développement en utilisant vue.js et supabase pour configurer un produit";
   position: relative;
   width: 12em;
   height: 4em;

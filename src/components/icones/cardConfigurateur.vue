@@ -22,7 +22,7 @@
         class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black "
         data-te-ripple-init
         data-te-ripple-color="light">
-        <a href="/public/teaching/TP Configurateur_Basket_v2.pdf">
+        <a href="https://docs.google.com/presentation/d/e/2PACX-1vSMGax1cjDp1ystoKPwPvVgp84XToij1xQX3JqUywmBowONIy0tDOsgDWuauWcJNFAHvmTLA19vi00L/pub?start=false&loop=false&delayms=3000">
         Voir le cours
         </a>
       </button>

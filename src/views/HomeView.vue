@@ -7,7 +7,7 @@ export default {
     return {
       cartes: [
             { id: 1, title: 'TP VueJs', description:  "Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'Voir le cours', textecategorie: 'Teaching' },
-            { id: 2, title: 'TP VueJs', categorie: 'developpement', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours' },
+            { id: 2, title: 'CobbleBros',  description:  "Réalisation d'un jeu de plateforme en JavaScript grâce à un tutoriel", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'Voir le projet', textecategorie: 'Développement'  },
             ],
             categorieSelectionnee: "toutes",
       typeValue: '',
@@ -116,13 +116,13 @@ export default {
       <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00] pb-10">Projets</h1>
           <div class="grid grid-cols-3">
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('toutes')">Toutes les cartes</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('toutes')">Tous les projets</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="carte in cartesFiltrees" :key="carte.id">
-                  <Card 
+                  <Card class="w-80"
                   :carte="carte" 
                   :id="carte.id" 
                   :title="carte.title"

@@ -1,20 +1,21 @@
 <template>
 <div class="flex justify-center">
   <div
-    class="block max-w-sm rounded-lg bg-white shadow-lg">
+    class="block max-w-sm rounded-lg bg-[#FAFF00] shadow-lg">
     <a href="#!">
       <img
         class="rounded-t-lg"
-        src="/public/images/Tp_Vue_Chaussure.png"
+        :src="imgcard"
         alt="" />
     </a>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-        TP Configurateur Vue.JS
+        class="mb-2 text-xl font-medium leading-tight text-[#000140]">
+        {{ title }}
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
-        Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js
+      <p class="mb-4 text-base text-[#000140]">
+        {{ description }}
+
       </p>
       <div class="grid grid-cols-2">
       <button
@@ -22,15 +23,15 @@
         class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black "
         data-te-ripple-init
         data-te-ripple-color="light">
-        <a href="https://docs.google.com/presentation/d/e/2PACX-1vSMGax1cjDp1ystoKPwPvVgp84XToij1xQX3JqUywmBowONIy0tDOsgDWuauWcJNFAHvmTLA19vi00L/pub?start=false&loop=false&delayms=3000" target="_blank">
-        Voir le cours
-        </a>
+        <RouterLink  :to="lien">
+        {{ textelien }}
+      </RouterLink>
       </button>
       <p
         class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black "
         data-te-ripple-init
         data-te-ripple-color="light">
-        Teaching
+        {{textecategorie}}
     </p>
       </div>
     </div>
@@ -39,9 +40,18 @@
 </template>
 <script>
 
-
-
 export default {
+  props: {
+        title: String,
+        imgcard: String,
+        description: String,
+        textelien: String,
+        textecategorie: String,
+        lien:{
+            type: String,
+            default:"/"
+        },
+    },  
     components: {  },
   data() {
     return {

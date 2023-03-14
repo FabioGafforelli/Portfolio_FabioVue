@@ -9,6 +9,11 @@ export default {
             { id: 1, title: 'TP VueJs', description:  "Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'Voir le cours', textecategorie: 'Teaching' },
             { id: 2, title: 'CobbleBros',  description:  "Réalisation d'un jeu de plateforme en JavaScript grâce à un tutoriel", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'Voir le projet', textecategorie: 'Développement'  },
             ],
+
+            competences: [
+            { id: 1, title: 'TP VueJs', description:  "Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'Voir le cours', textecategorie: 'Teaching' },
+            { id: 2, title: 'CobbleBros', categorie: 'developpement', imgcard: 'images/outils/vueJs.png', lien: '/cobblebros', textelien: 'Voir le projet', textecategorie: 'Développement'  },
+            ],
             categorieSelectionnee: "toutes",
       typeValue: '',
       typeStatus: false,
@@ -22,6 +27,9 @@ export default {
   },
   methods: {
     filtreCartes(categorie) {
+            this.categorieSelectionnee = categorie;
+        },
+    filtreCompetences(categorie) {
             this.categorieSelectionnee = categorie;
         },
     typeText(){
@@ -68,6 +76,14 @@ export default {
             }
             else {
                 return this.cartes.filter(carte => carte.categorie === this.categorieSelectionnee);
+            }
+        },
+        competencesFiltrees() {
+            if (this.categorieSelectionnee === "toutes") {
+                return this.competences;
+            }
+            else {
+                return this.competences.filter(competence => competence.categorie === this.categorieSelectionnee);
             }
         }
     },
@@ -142,7 +158,23 @@ export default {
 
 <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
-
+        <div class="grid grid-cols-3">
+  <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtrecompetences('toutes')">Tous les projets</button>
+  <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtrecompetences('design')">Design</button>
+  <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtrecompetences('developpement')">Langage de Programmation</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+  <div v-for="competence in competencesFiltrees" :key="competence.id">
+              <Card class="w-80"
+              :competence="competence" 
+              :id="competence.id" 
+              :title="competence.title"
+              :imgcard="competence.imgcard"  
+              :lien="competence.lien" 
+              :textecategorie="competence.textecategorie"
+              />
+            </div>
+</div>
       </section>
 
 

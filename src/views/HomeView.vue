@@ -11,7 +11,11 @@ export default {
             { id: 2, title: 'CobbleBros',  description:  "Réalisation d'un jeu de plateforme en JavaScript grâce à un tutoriel", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'Voir le projet', textecategorie: 'Développement'  },
             ],
             categorieSelectionnee: "toutes",
-
+            competences: [
+            { id: 1, title: 'VueJs', categorie: 'frameworks', imgcard: 'images/outils/vueJs.png', lien: '/', textecategorie: 'Frameworks' },
+            { id: 2, title: 'Figma', categorie: 'maquettage', imgcard: 'images/outils/Figma.png', lien: '/', textecategorie: 'Maquettage Web' },
+            ],
+            categorieSelectionnee: "toutes",
       typeValue: '',
       typeStatus: false,
       typeArray: ['Teacher', 'Front-End Developper', 'WebDesign'],
@@ -24,6 +28,9 @@ export default {
   },
   methods: {
     filtreCartes(categorie) {
+            this.categorieSelectionnee = categorie;
+        },
+    filtreCompetences(categorie) {
             this.categorieSelectionnee = categorie;
         },
     typeText(){
@@ -70,6 +77,14 @@ export default {
             }
             else {
                 return this.cartes.filter(carte => carte.categorie === this.categorieSelectionnee);
+            }
+        },
+        competenceFiltrees() {
+            if (this.categorieSelectionnee === "toutes") {
+                return this.competences;
+            }
+            else {
+                return this.competences.filter(competence => competence.categorie === this.categorieSelectionnee);
             }
         },
     },
@@ -144,7 +159,24 @@ export default {
 
 <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
-
+        <div class="grid grid-cols-3">
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Tous les projets</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div v-for="competence in competenceFiltrees" :key="competence.id">
+                  <Cardcompetence class="w-80"
+                  :carte="competence" 
+                  :id="competence.id" 
+                  :title="competence.title"
+                  :description="competence.description"
+                  :imgcard="competence.imgcard"  
+                  :lien="competence.lien" 
+                  :textecategorie="competence.textecategorie"
+                  :textelien="competence.textelien"/>
+                </div>
+    </div>
       </section>
 
 

@@ -121,8 +121,8 @@ export default {
       <section class="h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
-          <div class="pt-5">
-          <img src="/public/images/Test.jpg" alt="">
+          <div class="flex pt-5 justify-center">
+          <img src="/public/images/Fabio.png" alt="">
         </div>
         <div class="grid ">
         <p class="md:text-6xl text-center pt-64 text-3xl text-[#FAFF00]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>

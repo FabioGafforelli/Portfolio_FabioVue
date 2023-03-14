@@ -14,6 +14,7 @@ export default {
             competences: [
             { id: 1, title: 'VueJs', categorie: 'frameworks', imgcard: 'images/outils/vueJs.png', lien: '/', textecategorie: 'Frameworks' },
             { id: 2, title: 'Figma', categorie: 'maquettage', imgcard: 'images/outils/Figma.png', lien: '/', textecategorie: 'Maquettage Web' },
+            { id: 3, title: 'VS Code', categorie: 'outilsdev', imgcard: 'images/outils/VSCode.png', lien: '/', textecategorie: 'Outils de Développement' },
             ],
             categorieSelectionnee: "toutes",
       typeValue: '',
@@ -163,6 +164,7 @@ export default {
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Tous les projets</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('outilsdev')">Outils Développement</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="competence in competenceFiltrees" :key="competence.id">

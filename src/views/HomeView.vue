@@ -118,13 +118,13 @@ export default {
 
       </section>
 
-      <section class="md:h-screen h-fit">
+      <section class="h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="pt-5">
           <img src="/public/images/Test.jpg" alt="">
         </div>
-        <div class="grid grid-rows-2">
+        <div class="grid ">
         <p class="md:text-3xl text-center pt-64 text-6xl text-[#FAFF00]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
         <a href="/public/Fabio_Gafforelli-CV.pdf" target="_blank">
           <button class=" w-20 h-20 mb-20 rounded-2xl bg-[#FAFF00] py-2 px-5  text-[#000140]">

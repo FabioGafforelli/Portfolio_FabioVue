@@ -60,15 +60,16 @@ export default {
 
 </script>
 <template>
+  <div class="bg-[#000140]">
 <Header />
 
 <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-5  ">
 
 <div>
-      <section class="md:h-screen h-fit bg-white">
+      <section class="md:h-screen h-fit">
          <div class="grid ">
-          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#252C35] uppercase"><h1>Fabio</h1></div>
-          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#252C35] uppercase"><h1>Gafforelli</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Fabio</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Gafforelli</h1></div>
           <div class="col-span-2 md:text-9xl text-center text-2xl text-green-600 ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>
@@ -83,26 +84,36 @@ export default {
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#252C35]">A Propos</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
         <div class="grid grid-cols-2">
           <div class="pt-5">
           <img src="/public/images/Test.jpg" alt="">
         </div>
         <div class="grid grid-rows-2">
-        <p class="md:text-3xl text-center pt-64 text-6xl text-[#252C35]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+        <p class="md:text-3xl text-center pt-64 text-6xl text-[#FAFF00]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
       <button class=" w-20 h-20 mb-20 rounded-2xl bg-blue-600 py-2 px-5  text-white">CV</button>  
     </div>
       </div>
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#252C35] pb-10">Projets</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00] pb-10">Projets</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 <cardConfigurateur />
 <cardCobbleBros />
 <Card />
 <Card />
 </div>
+</section>
+
+
+<section class="md:h-screen h-fit">
+        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
+
+      </section>
+
+<section>
+
 <div class="mi-outer">
   <div class="mi">
     <div class="mi-flap2"></div>
@@ -123,6 +134,7 @@ export default {
       </section>
       </div>
       </div>
+    </div>
 </template>
 
 <style scoped>

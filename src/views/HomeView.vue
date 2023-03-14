@@ -155,14 +155,14 @@ export default {
     display: inline-block;
     margin-left: 3px;
     width: 4px;
-    background-color: #000;
+    background-color: #fff;
     animation: cursorBlink 1s infinite;
   }
   span.cursor.typing {
     animation: none
   }
   @keyframes cursorBlink {
-    49% {background-color: #000 ;}
+    49% {background-color: #fff ;}
     50% {background-color: transparent ;}
     99% {background-color: transparent ;}
   }

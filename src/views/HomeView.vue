@@ -12,7 +12,7 @@ export default {
             categorieSelectionnee: "toutes",
       typeValue: '',
       typeStatus: false,
-      typeArray: ['Neon', 'Chamber', 'Bronze', 'KJ Lineup'],
+      typeArray: ['Teacher', 'Front-End Developper', 'WebDesign'],
       typingSpeed: 200,
       erasingSpeed: 100,
       newTextDelay: 1500,
@@ -87,7 +87,7 @@ export default {
          <div class="grid ">
           <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Fabio</h1></div>
           <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Gafforelli</h1></div>
-          <div class="col-span-2 md:text-9xl text-center text-2xl text-green-600 ">
+          <div class="col-span-2 md:text-9xl text-center text-6xl ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>
 <div class="flex flex-col justify-center items-center relative mb-20 lg:mb-36 xl:mb-44 motion-safe:animate-bounce">

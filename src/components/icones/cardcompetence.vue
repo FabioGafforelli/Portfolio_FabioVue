@@ -1,10 +1,10 @@
 <template>
-    <div class="flex justify-center">
+    <div class="flex justify-center w-80 h-80">
       <div
         class="block max-w-sm rounded-lg bg-[#FAFF00] shadow-lg">
         <a href="#!">
           <img
-            class="rounded-t-lg flex justify-center"
+            class="rounded-t-lg flex justify-center w-40"
             :src="imgcard"
             alt="" />
         </a>

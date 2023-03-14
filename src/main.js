@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 
 import './index.css'
+import 'animate.css';
+
 import mitt from 'mitt';
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";  // Initialize Firebase

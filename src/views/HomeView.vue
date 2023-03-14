@@ -85,8 +85,8 @@ export default {
 <div>
       <section class="md:h-screen h-fit">
          <div class="grid ">
-          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Fabio</h1></div>
-          <div class="col-span-2 md:text-[190px] text-center text-6xl text-[#FAFF00] uppercase"><h1>Gafforelli</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInLeft text-[#FAFF00] uppercase"><h1>Fabio</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInRight text-[#FAFF00] uppercase"><h1>Gafforelli</h1></div>
           <div class="col-span-2 md:text-9xl text-center text-6xl ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>

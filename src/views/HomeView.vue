@@ -121,7 +121,7 @@ export default {
       <section class="h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
-          <div class="flex pt-5 justify-center">
+          <div class="flex pt-5 justify-center md:w-full w-80">
           <img src="/public/images/Fabio.png" alt="">
         </div>
         <div class="grid ">

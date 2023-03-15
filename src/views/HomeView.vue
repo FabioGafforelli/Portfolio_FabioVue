@@ -12,9 +12,17 @@ export default {
             ],
             categorieSelectionnee: "toutes",
             competences: [
-            { id: 1, title: 'VueJs', categorie: 'frameworks', imgcard: 'images/outils/vueJs.png', lien: '/', textecategorie: 'Frameworks' },
-            { id: 2, title: 'Figma', categorie: 'maquettage', imgcard: 'images/outils/Figma.png', lien: '/', textecategorie: 'Maquettage Web' },
-            { id: 3, title: 'VS Code', categorie: 'outilsdev', imgcard: 'images/outils/VSCode.png', lien: '/', textecategorie: 'Outils de Développement' },
+            { id: 1, title: 'VueJs', categorie: 'frameworks', imgcard: 'images/outils/VueJS.webp', lien: '/', textecategorie: 'Frameworks' },
+            { id: 2, title: 'Figma', categorie: 'maquettage', imgcard: 'images/outils/Figma.webp', lien: '/', textecategorie: 'Maquettage Web' },
+            { id: 3, title: 'VS Code', categorie: 'outilsdev', imgcard: 'images/outils/VSCode.webp', lien: '/', textecategorie: 'Outils de Développement' },
+            { id: 4, title: 'React', categorie: 'frameworks', imgcard: 'images/outils/React.webp', lien: '/', textecategorie: 'Frameworks' },
+            { id: 5, title: 'Next JS', categorie: 'frameworks', imgcard: 'images/outils/Nextjs.png', lien: '/', textecategorie: 'Frameworks' },
+            { id: 6, title: 'Tailwind CSS', categorie: 'frameworks', imgcard: 'images/outils/TailwindCSS.png', lien: '/', textecategorie: 'Frameworks' },
+            { id: 7, title: 'Three JS', categorie: 'frameworks', imgcard: 'images/outils/Three.png', lien: '/', textecategorie: 'Frameworks' },
+            { id: 8, title: 'Chart JS', categorie: 'frameworks', imgcard: 'images/outils/ChartJS.png', lien: '/', textecategorie: 'Frameworks' },
+            { id: 9, title: 'Illustrator', categorie: 'design', imgcard: 'images/outils/Illustrator.png', lien: '/', textecategorie: 'Design' },
+            { id: 10, title: 'Photoshop', categorie: 'design', imgcard: 'images/outils/Photoshop.png', lien: '/', textecategorie: 'Design' },
+            { id: 10, title: 'InDesign', categorie: 'design', imgcard: 'images/outils/InDesign.png', lien: '/', textecategorie: 'Design' },
             ],
             categorieSelectionnee: "toutes",
       typeValue: '',
@@ -122,7 +130,7 @@ export default {
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="flex pt-5 justify-center md:w-full w-80">
-          <img src="/public/images/Fabio.png" alt="">
+          <img src="/public/images/Fabio.webp" alt="">
         </div>
         <div class="grid ">
         <p class="md:text-6xl text-center md:pt-64 text-3xl text-[#FAFF00]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
@@ -141,6 +149,7 @@ export default {
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('toutes')">Tous les projets</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('design')">Design</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="carte in cartesFiltrees" :key="carte.id">
@@ -158,13 +167,14 @@ export default {
 </section>
 
 
-<section class="md:h-screen h-fit">
+<section class="md:h-fit h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
         <div class="grid grid-cols-3">
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Tous les projets</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Toutess les compétences</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('outilsdev')">Outils Développement</button>
+      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('design')">Design</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="competence in competenceFiltrees" :key="competence.id">

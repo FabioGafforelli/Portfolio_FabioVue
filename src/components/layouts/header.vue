@@ -30,7 +30,9 @@
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-[#FAFF00] font-museomoderno " to="/projets">Projets</RouterLink>
             </li>
             <li class="my-5">
+              <a href="#competences">
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm font-museomoderno text-[#FAFF00] " to="/admin">Compétences</RouterLink>
+              </a>
             </li>
             <li class="my-5">
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm font-museomoderno text-[#FAFF00]" to="/contact">Contact</RouterLink>

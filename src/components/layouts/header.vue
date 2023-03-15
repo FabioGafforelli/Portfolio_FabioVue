@@ -31,7 +31,7 @@
             </li>
             <li class="my-5">
               <a href="#competences">
-              <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm font-museomoderno text-[#FAFF00] " to="/admin">Compétences</RouterLink>
+            Compétences
               </a>
             </li>
             <li class="my-5">

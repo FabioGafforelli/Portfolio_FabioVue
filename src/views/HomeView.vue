@@ -167,7 +167,7 @@ export default {
 </section>
 
 
-<section class="md:h-fit h-fit">
+<section id="competences" class="md:h-fit h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
         <div class="grid grid-cols-3">
       <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Toutess les compétences</button>

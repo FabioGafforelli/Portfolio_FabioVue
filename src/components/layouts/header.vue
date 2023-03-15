@@ -48,7 +48,7 @@
             </li>
             <li class="my-5">
               <a href="#competences">
-              <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-algerian text-[#FAFF00]" to="/admin">Compétences</RouterLink>
+            Compétences
             </a>
           </li>
             <li class="my-5">

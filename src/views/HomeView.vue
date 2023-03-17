@@ -103,7 +103,7 @@ export default {
 
 </script>
 <template>
-  <div class="bg-[#000140]">
+  <div class="bg-gray-50">
 <Header />
 
 <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-5  ">
@@ -111,8 +111,8 @@ export default {
 <div>
       <section class="md:h-screen h-fit">
          <div class="grid ">
-          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInLeft text-[#FAFF00] uppercase"><h1>Fabio</h1></div>
-          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInRight text-[#FAFF00] uppercase"><h1>Gafforelli</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInLeft text-black uppercase"><h1>Fabio</h1></div>
+          <div class="col-span-2 md:text-[190px] text-center text-6xl animate__animated animate__backInRight text-black uppercase"><h1>Gafforelli</h1></div>
           <div class="col-span-2 md:text-9xl text-center text-6xl ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>
@@ -127,15 +127,15 @@ export default {
       </section>
 
       <section class="h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">A Propos</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black">A Propos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="flex pt-5 justify-center md:w-full w-80">
           <img src="/public/images/Fabio.webp" alt="">
         </div>
         <div class="grid ">
-        <p class="md:text-6xl text-center md:pt-64 text-3xl text-[#FAFF00]">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+        <p class="md:text-6xl text-center md:pt-64 text-3xl text-black">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
         <a href="/public/Fabio_Gafforelli-CV.pdf" target="_blank">
-          <button class=" w-20 h-20 mb-20 rounded-2xl bg-[#FAFF00] py-2 px-5  text-[#000140]">
+          <button class=" w-20 h-20 mb-20 rounded-2xl bg-black py-2 px-5  text-gbg-gray-50">
             CV
           </button>
         </a>  
@@ -144,12 +144,12 @@ export default {
       </section>
 
       <section class="md:h-screen h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00] pb-10">Projets</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projets</h1>
           <div class="grid grid-cols-3">
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('toutes')">Tous les projets</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('design')">Design</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('toutes')">Tous les projets</button>
+      <button class="text-black text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('design')">Design</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="carte in cartesFiltrees" :key="carte.id">
@@ -168,13 +168,13 @@ export default {
 
 
 <section id="competences" class="md:h-fit h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00]">Compétences</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black">Compétences</h1>
         <div class="grid grid-cols-3">
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Toutess les compétences</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('outilsdev')">Outils Développement</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCompetences('design')">Design</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Toutess les compétences</button>
+      <button class="text-black text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('outilsdev')">Outils Développement</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('design')">Design</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="competence in competenceFiltrees" :key="competence.id">
@@ -199,7 +199,7 @@ export default {
 
 <style scoped>
   span.typed-text {
-    color: #FAFF00;
+    color:black
   }
   span.cursor {
     display: inline-block;

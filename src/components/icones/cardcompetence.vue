@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center w-80 h-80">
       <div
-        class="block max-w-sm rounded-lg bg-[#FAFF00] shadow-lg">
+        class="block max-w-sm rounded-lg bg-white border border-black shadow-lg">
         <a href="#!">
           <img
             class="rounded-t-lg flex justify-center w-40"
@@ -11,7 +11,7 @@
         <div class="p-6">
           <div class="grid grid-cols-2">
             <h5
-            class="mb-2 text-xl font-medium leading-tight text-[#000140]">
+            class="mb-2 text-xl font-medium leading-tight text-black">
             {{ title }}
           </h5>
           <p

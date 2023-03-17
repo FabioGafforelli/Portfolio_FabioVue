@@ -9,7 +9,7 @@
     <div class="md:pt-5 w-40 md:w-96">
     <hr class="black">
     </div>
-    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">"I made a tutorial explaining better and in more detail the course of creating a product configurator using vue.js and supabase</p>
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">

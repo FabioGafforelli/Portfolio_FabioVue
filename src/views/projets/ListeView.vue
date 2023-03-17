@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-[#000140]">
+    <div class="bg-gray-50">
   <Header />
-        <h1 class="md:text-8xl text-left text-6xl text-[#FAFF00] pb-10">Projets</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projets</h1>
           <div class="grid grid-cols-3">
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('toutes')">Toutes les cartes</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
-      <button class="text-[#FAFF00] text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('toutes')">Toutes les cartes</button>
+      <button class="text-black text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
+      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       <div v-for="carte in cartesFiltrees" :key="carte.id">

@@ -146,12 +146,12 @@ export default {
       <section class="md:h-screen h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projets</h1>
           <div class="grid grid-cols-3">
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('toutes')">Tous les projets</button>
-      <button class="text-black text-xl font-bold border border-white gap-7" @click="filtreCartes('teaching')">Teaching</button>
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('developpement')">Developpement</button>
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCartes('design')">Design</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('toutes')">Tous les projets</button>
+      <button class="text-black text-xl font-bold border border-black gap-7" @click="filtreCartes('teaching')">Teaching</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('developpement')">Developpement</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('design')">Design</button>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 md:pt-10 px-10 md:px-28">
       <div v-for="carte in cartesFiltrees" :key="carte.id">
                   <Card class="w-80"
                   :carte="carte" 

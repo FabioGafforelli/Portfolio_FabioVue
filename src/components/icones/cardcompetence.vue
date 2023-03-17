@@ -1,13 +1,11 @@
 <template>
-    <div class="flex justify-center w-80 h-80">
+    <div class="flex justify-center w-80 h-fit">
       <div
-        class="block max-w-sm rounded-lg bg-white border border-black shadow-lg">
-        <a href="#!">
+        class=" max-w-sm rounded-lg flex justify-center bg-white border border-black shadow-lg">
           <img
-            class="rounded-t-lg flex justify-center w-40"
+            class="rounded-t-lg md:w-20"
             :src="imgcard"
             alt="" />
-        </a>
         <div class="p-6">
           <div class="grid grid-cols-2">
             <h5

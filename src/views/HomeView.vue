@@ -168,17 +168,17 @@ export default {
 
 
 <section id="competences" class="md:h-fit h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-black">Compétences</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black pb-5 md:pb-10">Compétences</h1>
         <div class="grid grid-cols-3">
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('toutes')">Toutess les compétences</button>
-      <button class="text-black text-xl font-bold border border-white gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('frameworks')">Frameworks</button>
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('outilsdev')">Outils Développement</button>
-      <button class="text-black text-xl font-bold border border-white" @click="filtreCompetences('design')">Design</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('toutes')">Toutess les compétences</button>
+      <button class="text-black text-xl font-bold border border-black gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('frameworks')">Frameworks</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('outilsdev')">Outils Développement</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('design')">Design</button>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 md:pt-10">
       <div v-for="competence in competenceFiltrees" :key="competence.id">
-                  <Cardcompetence class="w-80"
+                  <Cardcompetence 
                   :carte="competence" 
                   :id="competence.id" 
                   :title="competence.title"

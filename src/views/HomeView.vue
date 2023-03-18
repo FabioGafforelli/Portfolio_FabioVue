@@ -134,16 +134,18 @@ export default {
         </div>
         <div class="grid ">
         <p class="md:text-6xl text-center md:pt-64 text-3xl text-black">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+        <div class="flex justify-center pt-5">
         <a href="/public/Fabio_Gafforelli-CV.pdf" target="_blank">
-          <button class=" w-20 h-20 mb-20 rounded-2xl bg-black py-2 px-5  text-gbg-gray-50">
-            CV
+          <button class=" w-40 h-20 mb-20 rounded-2xl bg-black py-2 px-5  text-gray-50">
+           Voir mon CV
           </button>
-        </a>  
+        </a>
+      </div>  
     </div>
       </div>
       </section>
 
-      <section class="md:h-screen h-fit">
+      <section class="md:h-fit h-fit">
         <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projets</h1>
           <div class="grid grid-cols-3">
       <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('toutes')">Tous les projets</button>
@@ -151,7 +153,7 @@ export default {
       <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('developpement')">Developpement</button>
       <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('design')">Design</button>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 md:pt-10 px-10 md:px-28">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-40 pt-5 md:pt-10 px-10 md:px-28">
       <div v-for="carte in cartesFiltrees" :key="carte.id">
                   <Card class="w-80"
                   :carte="carte" 

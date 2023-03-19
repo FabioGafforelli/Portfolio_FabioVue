@@ -52,7 +52,7 @@
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Website</h2>
     <a href="https://jaguarvisualisation.netlify.app/" target="_blank">
-    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">= jaguarvisualisation.netlify.app/</p>
+    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">jaguarvisualisation.netlify.app/</p>
     </a>
    </div>
     <div class="md:pt-5 w-full">

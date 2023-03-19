@@ -28,6 +28,8 @@
     </p>
     <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
       This project was really special for me, given that I was absent two months on this semester but we still managed to adapt and finalize the project    </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      Here i want to thanks again Evan Raboutot and Maxime Mercier for their hard works on the project</p>
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">

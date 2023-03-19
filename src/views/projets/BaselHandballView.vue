@@ -13,7 +13,7 @@
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">
-        <img src="/public/images/Tp_Vue_Chaussure.png" alt="">
+        <img src="/public/images/BaselCover.png" alt="">
     </section> 
     <div class="pt-2 md:pt-5 px-10 md:px-20 gap-10 md:gap-20 pb-5 md:pb-10 relative ">
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-16 gap-10 md:gap-12">

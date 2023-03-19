@@ -21,10 +21,12 @@
                 </div>
     </div>
     </div>
+    <Footer />
 </template>
 
 <script>
 import Card from '../../components/icones/card.vue'
+import Footer from '../../components/layouts/footer.vue';
 import Header from '../../components/layouts/header.vue';
 
 export default {
@@ -52,6 +54,6 @@ export default {
             this.categorieSelectionnee = categorie;
         }
     },
-    components: { Card, Header }
+    components: { Card, Header, Footer }
 }
 </script>

@@ -61,13 +61,15 @@
         <img src="/public/images/Test.jpg" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pr-20">
     </div>
     </div>
+    <Footer />
      </template>
 
 <script>
+import Footer from '../../components/layouts/footer.vue';
 import Header from '../../components/layouts/header.vue';
 
 export default {
-    components: { Header }
+    components: { Header, Footer }
 }
 </script>
 

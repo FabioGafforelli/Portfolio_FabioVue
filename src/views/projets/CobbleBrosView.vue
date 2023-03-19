@@ -61,13 +61,15 @@
       </div>
 
     </div>
+    <Footer />
      </template>
 
 <script>
+import Footer from '../../components/layouts/footer.vue';
 import Header from '../../components/layouts/header.vue';
 
 export default {
-    components: { Header }
+    components: { Header, Footer }
 }
 </script>
 

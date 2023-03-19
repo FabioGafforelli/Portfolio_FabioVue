@@ -2,6 +2,7 @@
 import Card from '../components/icones/card.vue';
 import Cardcompetence from '../components/icones/cardcompetence.vue';
 import Dropdown from '../components/icones/Dropdown.vue';
+import Footer from '../components/layouts/footer.vue';
 import Header from '../components/layouts/header.vue';
 export default {
   data: () => {
@@ -10,6 +11,7 @@ export default {
             { id: 1, title: 'TP VueJs', description:  "Realization of a course to explain to students the configuration of a product using view.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'See the course', textecategorie: 'Teaching' },
             { id: 2, title: 'CobblesBros',  description:  "Making a platform game in JavaScript thanks to a tutorial", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'See the project', textecategorie: 'Developpement'  },
             { id: 3, title: 'Basel Handball',  description:  "Realization of poster and communication mission on the club's social networks", categorie: 'design', imgcard: 'images/BaselHandball.png', lien: '/basel', textelien: 'See the project', textecategorie: 'Design and Communication'  },
+            { id: 4, title: 'Arene Unified Champions',  description:  "Realization of poster and communication mission on the club's social networks", categorie: 'design', imgcard: 'images/AreneCover.png', lien: '/arene', textelien: 'See the project', textecategorie: 'Developpement'  },
             ],
             categorieSelectionnee: "toutes",
             competences: [
@@ -99,7 +101,7 @@ export default {
         },
     },
     name:"App",
-    components: { Header, Dropdown, Card, Cardcompetence },
+    components: { Header, Dropdown, Card, Cardcompetence, Footer },
 }
 
 </script>
@@ -195,6 +197,7 @@ export default {
       </div>
       </div>
     </div>
+    <Footer />
 </template>
 
 <style scoped>

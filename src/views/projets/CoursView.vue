@@ -13,8 +13,10 @@
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">
+      <div class="flex justify-center">
         <img src="/public/images/Tp_Vue_Chaussure.png" alt="">
-    </section> 
+    </div>
+      </section> 
     <div class="pt-2 md:pt-5 px-10 md:px-20 gap-10 md:gap-20 pb-5 md:pb-10 relative ">
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-16 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
@@ -57,19 +59,16 @@
     <hr class="black">
     </div>
       </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10 gap-5 md:gap-10 pb-5 md:pb-10 ">
-        <img src="/public/images/Test.jpg" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pl-20">
-        <img src="/public/images/Test.jpg" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pr-20">
     </div>
-    </div>
+    <Footer />
      </template>
 
 <script>
+import Footer from '../../components/layouts/footer.vue';
 import Header from '../../components/layouts/header.vue';
 
 export default {
-    components: { Header }
+    components: { Header, Footer }
 }
 </script>
 

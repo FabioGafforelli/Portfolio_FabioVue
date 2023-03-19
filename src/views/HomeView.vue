@@ -7,14 +7,15 @@ export default {
   data: () => {
     return {
       cartes: [
-            { id: 1, title: 'TP VueJs', description:  "Réalisation d'un cours pour expliquer aux étudiants la configuration d'un produit en utilisant vue.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'Voir le cours', textecategorie: 'Teaching' },
-            { id: 2, title: 'CobbleBros',  description:  "Réalisation d'un jeu de plateforme en JavaScript grâce à un tutoriel", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'Voir le projet', textecategorie: 'Développement'  },
+            { id: 1, title: 'TP VueJs', description:  "Realization of a course to explain to students the configuration of a product using view.js" ,categorie: 'teaching', imgcard: 'images/Tp_Vue_Chaussure.png', lien: '/cours',  textelien: 'See the course', textecategorie: 'Teaching' },
+            { id: 2, title: 'CobbleBros',  description:  "Making a platform game in JavaScript thanks to a tutorial", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'See the project', textecategorie: 'Developpement'  },
+            { id: 3, title: 'Basel Handball',  description:  "Realization of poster and communication mission on the club's social networks", categorie: 'design', imgcard: 'images/BaselHandball.png', lien: '/basel', textelien: 'See the project', textecategorie: 'Design and Communication'  },
             ],
             categorieSelectionnee: "toutes",
             competences: [
             { id: 1, title: 'VueJs', categorie: 'frameworks', imgcard: 'images/outils/VueJS.webp', lien: '/', textecategorie: 'Frameworks' },
             { id: 2, title: 'Figma', categorie: 'maquettage', imgcard: 'images/outils/Figma.webp', lien: '/', textecategorie: 'Maquettage Web' },
-            { id: 3, title: 'VS Code', categorie: 'outilsdev', imgcard: 'images/outils/VSCode.webp', lien: '/', textecategorie: 'Outils de Développement' },
+            { id: 3, title: 'VS Code', categorie: 'outilsdev', imgcard: 'images/outils/VSCode.webp', lien: '/', textecategorie: 'Developpement Tools' },
             { id: 4, title: 'React', categorie: 'frameworks', imgcard: 'images/outils/React.webp', lien: '/', textecategorie: 'Frameworks' },
             { id: 5, title: 'Next JS', categorie: 'frameworks', imgcard: 'images/outils/Nextjs.png', lien: '/', textecategorie: 'Frameworks' },
             { id: 6, title: 'Tailwind CSS', categorie: 'frameworks', imgcard: 'images/outils/TailwindCSS.png', lien: '/', textecategorie: 'Frameworks' },
@@ -124,7 +125,7 @@ export default {
       </section>
 
       <section class="h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-black">A Propos</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black">About me</h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="flex pt-5 justify-center md:w-full w-80">
           <img src="/public/images/Fabio.webp" alt="">
@@ -143,9 +144,9 @@ export default {
       </section>
 
       <section class="md:h-fit h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projets</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black pb-10">Projects</h1>
           <div class="grid grid-cols-3">
-      <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('toutes')">Tous les projets</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('toutes')">All projects</button>
       <button class="text-black text-xl font-bold border border-black gap-7" @click="filtreCartes('teaching')">Teaching</button>
       <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('developpement')">Developpement</button>
       <button class="text-black text-xl font-bold border border-black" @click="filtreCartes('design')">Design</button>
@@ -167,12 +168,12 @@ export default {
 
 
 <section id="competences" class="md:h-fit h-fit">
-        <h1 class="md:text-8xl text-left text-6xl text-black pb-5 md:pb-10">Compétences</h1>
+        <h1 class="md:text-8xl text-left text-6xl text-black pb-5 md:pb-10">Skills</h1>
         <div class="grid grid-cols-3">
-      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('toutes')">Toutess les compétences</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('toutes')">All skills</button>
       <button class="text-black text-xl font-bold border border-black gap-7" @click="filtreCompetences('maquettage')">Maquettage</button>
       <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('frameworks')">Frameworks</button>
-      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('outilsdev')">Outils Développement</button>
+      <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('outilsdev')">Developpement tools</button>
       <button class="text-black text-xl font-bold border border-black" @click="filtreCompetences('design')">Design</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-5 md:pt-10">

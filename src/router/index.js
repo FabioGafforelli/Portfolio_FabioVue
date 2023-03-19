@@ -4,6 +4,7 @@ import View404 from '../views/404View.vue';
 import ContactView from '../views/ContactView.vue';
 
 import ListeProjets from '../views/projets/ListeView.vue';
+import SkillsView from '../views/SkillsView.vue';
 import CoursView from '../views/projets/CoursView.vue';
 import CobbleBrosView from '../views/projets/CobbleBrosView.vue';
 import BaselHandballView from '../views/projets/BaselHandballView.vue';
@@ -22,6 +23,7 @@ const router = createRouter({
    
    
     { path: '/projets', name: 'ListeProjets', component: ListeProjets },
+    { path: '/skills', name: 'SkillsView', component: SkillsView },
 
     { path: '/cours', name: 'CoursView', component: CoursView },
     { path: '/cobblebros', name: 'CobbleBrosView', component: CobbleBrosView },

@@ -30,9 +30,7 @@
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/projets">Projets</RouterLink>
             </li>
             <li class="my-5">
-              <a href="#competences">
-            Compétences
-              </a>
+              <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/skills">Skills</RouterLink>
             </li>
             <li class="my-5">
               <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm font-museomoderno text-black" to="/contact">Contact</RouterLink>
@@ -47,9 +45,7 @@
               <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-algerian text-black " to="/projets">Projets</RouterLink>
             </li>
             <li class="my-5">
-              <a href="#competences">
-            Compétences
-            </a>
+              <RouterLink class="my-6 lg:px-4 xl:pt-2 xl:rounded-sm text-black font-museomoderno " to="/skills">Skills</RouterLink>
           </li>
             <li class="my-5">
               <RouterLink class="my-6 lg:px-2 xl:pt-2 xl:rounded-sm font-algerian text-black " to="/contact">Contact</RouterLink>

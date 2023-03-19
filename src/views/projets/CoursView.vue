@@ -49,7 +49,7 @@
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Link of the course</h2>
-    <a href="/dist/TP Configurateur_Basket_Finale.pdf" target="_blank">
+    <a href="https://docs.google.com/presentation/d/1aXT58TAsEKaxch7854bEXZWiD1KfIgphbgDytwhU-cE/edit?usp=sharing" target="_blank">
     <p class="text-base md:text-xl font-rubik font-light md:pl-40 text-black">VUE JS TP CONFIGURATOR PDF</p>
   </a>
    </div>

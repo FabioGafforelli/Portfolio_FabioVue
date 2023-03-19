@@ -9,6 +9,7 @@ import CobbleBrosView from '../views/projets/CobbleBrosView.vue';
 import BaselHandballView from '../views/projets/BaselHandballView.vue';
 import AreneView from '../views/projets/AreneView.vue';
 import CoursHoneystView from '../views/projets/CoursHoneystView.vue';
+import JaguarView from '../views/projets/JaguarView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/basel', name: 'BaselHandballView', component: BaselHandballView },
     { path: '/arene', name: 'AreneView', component: AreneView },
     { path: '/cours_wordpress', name: 'CoursHoneystView', component: CoursHoneystView },
+    { path: '/jaguar', name: 'JaguarView', component: JaguarView },
 
 
   ]

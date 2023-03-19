@@ -12,7 +12,8 @@ export default {
             { id: 2, title: 'CobblesBros',  description:  "Making a platform game in JavaScript thanks to a tutorial", categorie: 'developpement', imgcard: 'images/CobbleBros.png', lien: '/cobblebros', textelien: 'See the project', textecategorie: 'Developpement'  },
             { id: 3, title: 'Basel Handball',  description:  "Realization of poster and communication mission on the club's social networks", categorie: 'design', imgcard: 'images/BaselHandball.png', lien: '/basel', textelien: 'See the project', textecategorie: 'Design and Communication'  },
             { id: 4, title: 'Arene Unified Champions',  description:  "Participation in the development and creation of the visual identity of the detection tournament of the esport team of the University of Franche Comté, the arena", categorie: 'design', imgcard: 'images/AreneCover.png', lien: '/arene', textelien: 'See the project', textecategorie: 'Developpement and Design'  },
-            { id: 4, title: 'Honeyst course',  description:  "Realization of a course to explain to students the realization of an e commerce store with wordpress", categorie: 'teaching', imgcard: 'images/Honeyst.png', lien: '/cours_wordpress', textelien: 'See the project', textecategorie: 'Teaching'  },
+            { id: 5, title: 'Honeyst course',  description:  "Realization of a course to explain to students the realization of an e commerce store with wordpress", categorie: 'teaching', imgcard: 'images/Honeyst.png', lien: '/cours_wordpress', textelien: 'See the project', textecategorie: 'Teaching'  },
+            { id: 6, title: 'Jaguar 3D Next.JS',  description:  "Realization of a website with react just for try to import a 3d model to a wbesite", categorie: 'developpement', imgcard: 'images/Honeyst.png', lien: '/jaguar', textelien: 'See the project', textecategorie: 'Developpement'  },
             ],
             categorieSelectionnee: "toutes",
             competences: [

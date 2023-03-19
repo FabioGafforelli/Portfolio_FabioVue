@@ -116,9 +116,6 @@ export default {
           <div class="col-span-2 md:text-9xl text-center text-6xl ">
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor" :class="{'typing' : typeStatus}">&nbsp;</span>
-<div class="flex flex-col justify-center items-center relative mb-20 lg:mb-36 xl:mb-44 motion-safe:animate-bounce">
-            <Dropdown />
-          </div>
           </div>
           
 
@@ -133,7 +130,7 @@ export default {
           <img src="/public/images/Fabio.webp" alt="">
         </div>
         <div class="grid ">
-        <p class="md:text-6xl text-center md:pt-64 text-3xl text-black">Étudiant en 2ème année de BUT Métiers du Multimédia et de l’Internet (MMI) à Montbéliard.</p>
+        <p class="md:text-6xl text-center md:pt-64 text-3xl text-black">Student in 2nd year of BUT Multimedia and Internet Professions (MMI) in Montbéliard.</p>
         <div class="flex justify-center pt-5">
         <a href="/public/Fabio_Gafforelli-CV.pdf" target="_blank">
           <button class=" w-40 h-20 mb-20 rounded-2xl bg-black py-2 px-5  text-gray-50">

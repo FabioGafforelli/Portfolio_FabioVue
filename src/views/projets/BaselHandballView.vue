@@ -9,7 +9,7 @@
     <div class="md:pt-5 w-40 md:w-96">
     <hr class="black">
     </div>
-    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">"I made a tutorial explaining better and in more detail the course of creating a product configurator using vue.js and supabase</p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">I made posters and communication missions on social networks to increase the attractiveness and activity of the Bavans Seloncourt Audincourt Handball Club</p>
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">
@@ -29,7 +29,7 @@
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Year</h2>
-    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">2022-2023</p>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">
@@ -39,7 +39,7 @@
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Used tools</h2>
-    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">Illustrator, Photoshop, Canva, Instagram, facebook, Twitch</p>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">
@@ -49,7 +49,9 @@
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Website</h2>
-    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <a href="https://baselhb.fr" target="_blank">
+    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">Not made by myself :  https://baselhb.fr</p>
+    </a>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">

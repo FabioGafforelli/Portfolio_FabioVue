@@ -9,7 +9,9 @@
     <div class="md:pt-5 w-40 md:w-96">
     <hr class="black">
     </div>
-    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">For a semester project, we worked in groups of 3 on the creation of the site and the organization of the detection tournament for the university's esport team.</p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">For a semester project, we worked in groups of 3 on the creation of the site and the organization of the detection tournament for the university's esport team.
+      I take part in the creation of the visual identity and the developpement of the website for the detection tournament of the esport team of the University of Franche Comté, "The Arena"
+    </p>
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">

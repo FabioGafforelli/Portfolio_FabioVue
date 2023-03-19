@@ -12,6 +12,22 @@
     <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">For a semester project, we worked in groups of 3 on the creation of the site and the organization of the detection tournament for the university's esport team.
       I take part in the creation of the visual identity and the developpement of the website for the detection tournament of the esport team of the University of Franche Comté, "The Arena"
     </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      Arena is a semester project carried out within the MMI Montbéliard department, which aims to create a website to promote and organize a detection tournament for the university's e-sports team.
+    </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      The project was led by a team of three students, each responsible for a part of the project, including the design, development and promotion of the website without forgetting the graphic identity of this new team.
+    </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      The communication part was left to Maxime Mercier while the design part was dedicated to Evan Raboutot </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      For myself, i was helping on both side and also take care of the developpement part, University ask us to do a simple wordpress one page website.</p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      With my group, we decide that for explore all of the skills we learned this semester we should also do a version of the arena with Vue.js and tailwindCSS. University let's us do it and
+      i started the developpement 
+    </p>
+    <p class="text-base md:text-xl font-rubik font-light pt-5 md:pt-16 text-black">
+      This project was really special for me, given that I was absent two months on this semester but we still managed to adapt and finalize the project    </p>
       </div>
     </div>
     <section class="h-fit md:h-fit pt-10">

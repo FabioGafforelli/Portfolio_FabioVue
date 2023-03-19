@@ -3,8 +3,8 @@
         <a href="#content" class="sr-only focus:not-sr-only text-lg text-black"> Passez au contenu </a>
         <nav class=" lg:flex lg:justify-between items-center">
           <div class="flex justify-between items-center">
-           <RouterLink to="/">			
-           <h1 class="text-black text-xl font-bold lg:text-5xl">FG</h1>
+           <RouterLink to="/">
+            <img src="/public/images/Logo.png" alt="" class="w-20">	
         </RouterLink> 
           <span class="text-5xl cursor-pointer lg:hidden block w-8 h-8 mx-55  ">
             <MenuIcon class=" text-black"  aria-controls="menu"

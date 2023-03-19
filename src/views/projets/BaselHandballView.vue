@@ -57,8 +57,8 @@
       </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 pt-5 md:pt-10 gap-5 md:gap-10 pb-5 md:pb-10 ">
-        <img src="/public/images/Test.jpg" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pl-20">
-        <img src="/public/images/Test.jpg" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pr-20">
+        <img src="/public/images/BaselAffiche1.png" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pl-20">
+        <img src="/public/images/BaselAffiche2.png" alt="" class="w-96 md:w-[500px] pl-10 pr-10 md:pr-20">
     </div>
     </div>
      </template>

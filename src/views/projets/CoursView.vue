@@ -19,27 +19,27 @@
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-16 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Client</h2>
-    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">MMI Students</p>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">
     </div>
       </div>
     <div class="px-10 md:px-20 gap-10 md:gap-20 pb-2 md:pb-10 relative ">
-                <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
+                <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-10">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Year</h2>
-    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light text-black md:pl-80">2023</p>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">
     </div>
       </div>
     <div class="px-10 md:px-20 gap-10 md:gap-20 pb-2 md:pb-10 relative ">
-                <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
+                <div class="flex pb-7 md:px-10 pt-5 md:pt-5 gap-10 md:gap-4">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
     Used tools</h2>
-    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <p class="text-base md:text-xl font-rubik font-light md:pl-60 text-black">VS Code, Tailwind CSS, Google Slides</p>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">
@@ -48,8 +48,10 @@
     <div class="px-10 md:px-20 gap-10 md:gap-20 pb-2 md:pb-10 relative ">
                 <div class="flex pb-7 md:px-14 pt-5 md:pt-5 gap-10 md:gap-12">
       <h2 class=" uppercase text-black text-left md:text-3xl text-xl ">       
-    Website</h2>
-    <p class="text-base md:text-xl font-rubik font-light md:pl-80 text-black">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    Link of the course</h2>
+    <a href="/public/TP Configurateur_Basket_Finale.pdf" target="_blank">
+    <p class="text-base md:text-xl font-rubik font-light md:pl-40 text-black">VUE JS TP CONFIGURATOR PDF</p>
+  </a>
    </div>
     <div class="md:pt-5 w-full">
     <hr class="black">

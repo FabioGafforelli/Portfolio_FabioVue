@@ -5,7 +5,7 @@
   <div class="pt-2 md:pt-5 px-10 md:px-20 gap-10 md:gap-20 pb-5 md:pb-10 relative ">
             <div>
       <h1 class="pt-8 md:pt-32 uppercase text-black text-left md:text-6xl text-xl ">       
-    Cours Vue JS</h1>
+    Cobble Bros </h1>
     <div class="md:pt-5 w-40 md:w-96">
     <hr class="black">
     </div>

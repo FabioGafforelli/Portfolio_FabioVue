@@ -139,7 +139,7 @@ export default {
         <div class="flex justify-center pt-5">
         <a href="/public/Fabio_Gafforelli-CV.pdf" target="_blank">
           <button class=" w-40 h-20 mb-20 rounded-2xl bg-black py-2 px-5  text-gray-50">
-           Voir mon CV
+           Download my CV
           </button>
         </a>
       </div>  
